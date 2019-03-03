@@ -38,7 +38,7 @@ cell_ids = pd.DataFrame({
   "cell_ids":expression.index
 })
 pseudotime = pd.DataFrame({
-  "pseudotime":w[:, 0],
+  "pseudotime":w[0, :],
   "cell_id":expression.index
 })
 
