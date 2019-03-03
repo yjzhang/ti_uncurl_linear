@@ -15,5 +15,5 @@ output:
   outputs:
     - linear_trajectory
     - dimred
-    - grouping
+    #- grouping
       #- cell_graph

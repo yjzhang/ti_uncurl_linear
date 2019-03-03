@@ -31,3 +31,5 @@ dataset <- wrap_expression(
 ) %>% add_prior_information(start_id=start_id)
 
 model <- infer_trajectory(dataset, ti_comp1())
+
+dynplot::plot_dimred(model, color_cells = "pseudotime" , expression_source = dataset$expression)
