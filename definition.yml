@@ -6,7 +6,7 @@ parameters:
 input:
   format: text
   required:
-    - counts
+    - expression
   optional:
     - groups_n
     - start_id

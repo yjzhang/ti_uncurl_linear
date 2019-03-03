@@ -9,7 +9,7 @@ import time
 checkpoints = {}
 
 ## Load data -----------------------------------------------
-expression = pd.read_csv("/ti/input/counts.csv", index_col=0)
+expression = pd.read_csv("/ti/input/expression.csv", index_col=0)
 params = json.load(open("/ti/input/params.json", "r"))
 
 if os.path.exists("/ti/input/start_id.json"):
