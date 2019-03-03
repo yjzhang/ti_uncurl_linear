@@ -42,6 +42,13 @@ pseudotime = pd.DataFrame({
   "cell_id":expression.index
 })
 
+# use w as dim_red
+dimred = pd.DataFrame({
+    'cell_id':expression.index,
+    'comp_1':w[0,:],
+    'comp_2':w[1,:]
+})
+
 # flip pseudotimes using start_id
 if start_id is not None:
   if pseudotime.pseudotime[start_id].mean():
@@ -52,5 +59,6 @@ if start_id is not None:
 # output pseudotimes
 cell_ids.to_csv("/ti/output/cell_ids.csv", index = False)
 pseudotime.to_csv("/ti/output/pseudotime.csv", index = False)
+dimred.to_csv('/ti/output/dimred.csv', index=False)
 
 json.dump(checkpoints, open("/ti/output/timings.json", "w"))
