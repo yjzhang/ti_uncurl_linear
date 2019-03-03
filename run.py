@@ -28,7 +28,7 @@ checkpoints["method_afterpreproc"] = time.time()
 
 count_data = expression.values
 count_data = count_data.T
-m, w, ll = uncurl.run_state_estimation(count_data, groups_n)
+m, w, ll = uncurl.run_state_estimation(count_data, 2)
 
 checkpoints["method_aftermethod"] = time.time()
 
