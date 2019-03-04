@@ -57,9 +57,9 @@ groupings = pd.DataFrame({
 
 # flip pseudotimes using start_id
 if start_id is not None:
-  if pseudotime.pseudotime[start_id].mean():
+  if pseudotime.pseudotime[start_id].mean() > 0.5:
     pseudotime.pseudotime = 1 - pseudotime.pseudotime
-# 
+
 # ## Save output ---------------------------------------------
 # # output pseudotimes
 # output pseudotimes

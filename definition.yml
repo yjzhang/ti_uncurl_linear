@@ -1,4 +1,4 @@
-id: dynwrap_tester_python_text
+id: uncurl_linear
 docker_repository: dynverse/dynwrap_tester_python_text
 container_url: https://github.com/dynverse/dynwrap_tester/tree/master/python_text
 name: uncurl_linear
